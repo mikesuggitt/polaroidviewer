@@ -1,0 +1,18 @@
+@import url('bootstrap.css');
+@import url('polaroid.css');
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+section {
+    height:100%;
+    width: 100%;
+}
+
+
+
+article {
+    margin-top: 100px;
+    padding:30px;
+}

@@ -1,0 +1,47 @@
+.polaroid {
+    background: none repeat scroll 0 0 white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: inline;
+    float: left;
+    margin: 0 15px 30px;
+    padding: 10px 10px 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.15s linear 0s;
+    z-index: 0;
+    width: 400px;
+}
+
+
+
+.polaroid:after {
+    color: #333333;
+    content: attr(title);
+    font-size: 20px;
+    position: relative;
+    top: 15px;
+}
+
+.polaroid:nth-child(2n) {
+    transform: rotate(4deg);
+}
+.polaroid:nth-child(3n) {
+    transform: rotate(-24deg);
+}
+.polaroid:nth-child(4n) {
+    transform: rotate(14deg);
+}
+.polaroid:nth-child(5n) {
+    transform: rotate(-18deg);
+}
+
+.polaroid:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.polaroid img {
+    width:100%;
+}
